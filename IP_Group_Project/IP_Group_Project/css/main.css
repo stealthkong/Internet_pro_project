@@ -1,0 +1,16 @@
+﻿/* Banner */
+
+#banner {
+    background-color: #000000;
+    color: #000000;
+    padding: 4em 0 3em 0;
+    text-align: center;
+}
+
+ul.actions {
+	list-style: none;
+	padding-left: 0;
+    font-family:'public Market';
+    color: #ffffff;
+}
+
