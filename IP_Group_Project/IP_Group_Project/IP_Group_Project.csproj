@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\main.css" />
+    <Content Include="images\MC logo- black.gif" />
     <Content Include="images\MC logo-white.gif" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />

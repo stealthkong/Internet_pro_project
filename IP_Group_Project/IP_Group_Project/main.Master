@@ -20,10 +20,10 @@
 				<h2>
                     <img src="images/MC%20logo-white.gif" /></h2>
                 <ul class="actions">
-					<li><a href="calendar.aspx" class="button special">| SHOW CALANDER |</a></li>
-                    <li><a href="About.aspx" class="button special">| ABOUT MISS CALCULATION'S |</a></li>
-                    <li><a href="Merchandise.aspx" class="button special">| MERCHANDISE |</a></li>
-                    <li><a href="login.aspx" class="button special">| LOG IN |</a></li>
+					<li><a href="calendar.aspx" class="button special"> SHOW CALANDER / </a></li>
+                    <li><a href="About.aspx" class="button special"> ABOUT MISS CALCULATION'S /</a></li>
+                    <li><a href="Merchandise.aspx" class="button special"> MERCHANDISE / </a></li>
+                    <li><a href="login.aspx" class="button special"> LOG IN </a></li>
                     
 				</ul>
 			  
@@ -39,6 +39,16 @@
                      </asp:ContentPlaceHolder>
 			</section>
         </form>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+     
+
+
+
+    </asp:ContentPlaceHolder>
+    <section id="footer">
+               <p>
+                   COPYRIGHT 2016- SJR ENTERPRISES   |  <a href="mailto:rbernander@islander.tamucc.ed?Subject=You%20guys%20get%20an%20A" target="_top">CONTACT US</a> 
+               </p>
+			</section>
 </body>
 </html>
