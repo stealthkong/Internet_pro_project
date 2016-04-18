@@ -18,33 +18,38 @@
         	<!-- Banner -->
 			<section id="banner">
 				<h2>
-                    <img src="images/MC%20logo-white.gif" /></h2>
+                    <a href="default.aspx"><img src="images/MC%20logo-white.gif" /></a></h2>
                 <ul class="actions">
-					<li><a href="calendar.aspx" class="button special"> SHOW CALANDER / </a></li>
-                    <li><a href="About.aspx" class="button special"> ABOUT MISS CALCULATION'S /</a></li>
-                    <li><a href="Merchandise.aspx" class="button special"> MERCHANDISE / </a></li>
+					<li><a href="calendar.aspx" class="button special"> SHOW CALENDAR  </a></li>
+                    <li><a href="About.aspx" class="button special"> ABOUT MISS CALCULATION'S </a></li>
+                    <li><a href="Merchandise.aspx" class="button special"> MERCHANDISE  </a></li>
                     <li><a href="login.aspx" class="button special"> LOG IN </a></li>
                     
 				</ul>
 			  
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder99" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                         </asp:ContentPlaceHolder>
+                    </div>
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                     </asp:ContentPlaceHolder>
               
 			</section>
 
-		<!-- One -->
+		<!-- middle -->
             
-			<section>
-					<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+			<section id="middle" class="wrapper special">
+               
+					<asp:ContentPlaceHolder ID="ContentPlaceHolder99" runat="server">
                      </asp:ContentPlaceHolder>
-			</section>
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+
+                    </asp:ContentPlaceHolder>
+
+    		</section>
         </form>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
-     
-
-
-
-    </asp:ContentPlaceHolder>
     <section id="footer">
                <p>
                    COPYRIGHT 2016- SJR ENTERPRISES   |  <a href="mailto:rbernander@islander.tamucc.ed?Subject=You%20guys%20get%20an%20A" target="_top">CONTACT US</a> 
