@@ -58,16 +58,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\login.css" />
     <Content Include="css\main.css" />
     <Content Include="images\background2.jpg" />
     <Content Include="images\backgroundThree.jpg" />
+    <Content Include="images\loginImage.gif" />
     <Content Include="images\MC logo- black.gif" />
     <Content Include="images\MC logo-white.gif" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="signUp.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="login.Master.cs">
+      <DependentUpon>login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.Master.designer.cs">
+      <DependentUpon>login.Master</DependentUpon>
+    </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -90,10 +100,18 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="signUp.aspx.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signUp.aspx.designer.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="main.Master" />
     <Content Include="fonts\Public Market.ttf" />
+    <Content Include="login.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

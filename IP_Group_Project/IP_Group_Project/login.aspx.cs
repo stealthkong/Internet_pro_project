@@ -13,5 +13,27 @@ namespace IP_Group_Project
         {
 
         }
+
+        protected void signUpBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("signUp.aspx");
+        }
+
+        protected void signInBtn_Click(object sender, EventArgs e)
+        {
+            if (userBox.Text == "")
+            {
+                Errorlbl.Text = "* The user name field is required";
+                Errorlbl.Visible = true;
+                return;
+            }
+
+            if (passBox.Text == "")
+            {
+                Errorlbl.Text = "* The email field is required";
+                Errorlbl.Visible = true;
+                return;
+            }
+        }
     }
 }
