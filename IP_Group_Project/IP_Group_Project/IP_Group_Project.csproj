@@ -69,6 +69,8 @@
     <Content Include="default.aspx" />
     <Content Include="login.aspx" />
     <Content Include="signUp.aspx" />
+    <Content Include="adminLogin.aspx" />
+    <Content Include="adminPage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.Master.cs">
@@ -106,6 +108,20 @@
     </Compile>
     <Compile Include="signUp.aspx.designer.cs">
       <DependentUpon>signUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.aspx.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminLogin.aspx.designer.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPage.aspx.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPage.aspx.designer.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

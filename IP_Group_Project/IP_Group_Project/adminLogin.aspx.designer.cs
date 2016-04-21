@@ -10,7 +10,7 @@
 namespace IP_Group_Project {
     
     
-    public partial class WebForm2 {
+    public partial class WebForm4 {
         
         /// <summary>
         /// Label1 control.
@@ -22,15 +22,6 @@ namespace IP_Group_Project {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// userBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userBox;
-        
-        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -40,13 +31,13 @@ namespace IP_Group_Project {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// passBox control.
+        /// unameBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passBox;
+        protected global::System.Web.UI.WebControls.TextBox unameBox;
         
         /// <summary>
         /// Label3 control.
@@ -58,22 +49,58 @@ namespace IP_Group_Project {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// signInBtn control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button signInBtn;
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// signUpBtn control.
+        /// passBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button signUpBtn;
+        protected global::System.Web.UI.WebControls.TextBox passBox;
+        
+        /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// loginBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button loginBtn;
+        
+        /// <summary>
+        /// backBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button backBtn;
+        
+        /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// SqlDataSource1 control.

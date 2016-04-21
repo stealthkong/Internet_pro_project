@@ -9,38 +9,38 @@ using System.Web.UI.WebControls;
 
 namespace IP_Group_Project
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class WebForm4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void signUpBtn_Click(object sender, EventArgs e)
+        protected void backBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("signUp.aspx");
+            Response.Redirect("login.aspx");
         }
 
-        protected void signInBtn_Click(object sender, EventArgs e)
+        protected void loginBtn_Click(object sender, EventArgs e)
         {
-            if (userBox.Text == "")
+            if (unameBox.Text == "")
             {
-                Label2.Text = "* The user name field is required";
-                Label2.Visible = true;
+                Label3.Text = "* Please enter a valid username";
+                Label3.Visible = true;
                 return;
             }
 
             if (passBox.Text == "")
             {
-                Label3.Text = "* The email field is required";
-                Label3.Visible = true;
+                Label5.Text = "* please enter a valid password";
+                Label5.Visible = true;
                 return;
             }
 
             SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "SELECT count(*) FROM Users WHERE Admin_Username='" + userBox.Text + "' AND Admin_Password='" + passBox.Text + "'";
+            cmd.CommandText = "SELECT count(*) FROM Admin WHERE Admin_UName='" + unameBox.Text + "' AND Admin_Password='" + passBox.Text + "'";
             cmd.Connection = db;
 
             db.Open();
@@ -50,8 +50,8 @@ namespace IP_Group_Project
                 int search = Convert.ToInt32(cmd.ExecuteScalar());
                 if (search <= 0)
                 {
-                   // lblError.Text = "* Please enter a valid user name and password";
-                    //lblError.Visible = true;
+                    lblError.Text = "* Please enter a valid user name and password";
+                    lblError.Visible = true;
                     return;
                 }
             }
@@ -67,5 +67,7 @@ namespace IP_Group_Project
             }
             Response.Redirect("adminPage.aspx");
         }
+
+     
     }
 }
