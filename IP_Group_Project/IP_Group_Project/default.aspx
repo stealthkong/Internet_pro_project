@@ -7,6 +7,8 @@
     
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder99" runat="server">
-    
+<asp:ListView ID="showFront" runat="server">
+
+</asp:ListView>
 </asp:Content>
 
