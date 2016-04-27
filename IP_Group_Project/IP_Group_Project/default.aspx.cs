@@ -13,5 +13,15 @@ namespace IP_Group_Project
         {
 
         }
+
+        protected void purchaseButton_Click(object sender, EventArgs e)
+        {
+            Button btnTP = (Button)(sender);
+            Session["ticketName"] = btnTP.CommandArgument;
+
+            Response.Redirect("ticketPage.aspx", false);
+            Context.ApplicationInstance.CompleteRequest();
+        }
+
     }
 }

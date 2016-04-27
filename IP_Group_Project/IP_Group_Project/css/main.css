@@ -6,7 +6,7 @@
     padding: 8px;
     font-size: 12px;
     text-align: center;
-    position: fixed;
+    /**position: fixed;**/
     top: 0;
     left: 0;
     right: 0;
@@ -53,7 +53,7 @@ a{
     font-size: 10px;
     text-align: center;
     font-family:'public Market';
-    position: fixed;
+    /**position: fixed;**/
     left: 0;
     right: 0;
     bottom:0;
@@ -134,9 +134,15 @@ a{
 		}
 
 #fullcontent {
-    position:fixed;
+    /**position:fixed;**/
     width: 100% !important;
     height: 1000px !important;
     background-color: black;
 
+}
+
+#FrontPageList {
+    margin-left: 400px;
+    font-family: Helvetica;
+    font-size: 20px;
 }

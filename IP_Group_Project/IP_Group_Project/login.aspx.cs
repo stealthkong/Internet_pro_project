@@ -21,8 +21,15 @@ namespace IP_Group_Project
             Response.Redirect("signUp.aspx");
         }
 
+        protected void lnkAdminLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("adminLogin.aspx");
+        }
+
         protected void signInBtn_Click(object sender, EventArgs e)
         {
+            bool found = false;
+
             if (userBox.Text == "")
             {
                 Label2.Text = "* The user name field is required";
@@ -32,7 +39,7 @@ namespace IP_Group_Project
 
             if (passBox.Text == "")
             {
-                Label3.Text = "* The email field is required";
+                Label3.Text = "* The password field is required";
                 Label3.Visible = true;
                 return;
             }
@@ -40,7 +47,7 @@ namespace IP_Group_Project
             SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "SELECT count(*) FROM Users WHERE Admin_Username='" + userBox.Text + "' AND Admin_Password='" + passBox.Text + "'";
+            cmd.CommandText = "SELECT count(*) FROM Users WHERE User_Uname='" + userBox.Text + "' AND User_Password='" + passBox.Text + "'";
             cmd.Connection = db;
 
             db.Open();
@@ -50,8 +57,8 @@ namespace IP_Group_Project
                 int search = Convert.ToInt32(cmd.ExecuteScalar());
                 if (search <= 0)
                 {
-                   // lblError.Text = "* Please enter a valid user name and password";
-                    //lblError.Visible = true;
+                    Label2.Text = "* Please enter a valid user name and password";
+                    Label2.Visible = true;
                     return;
                 }
             }
@@ -65,7 +72,13 @@ namespace IP_Group_Project
             {
                 db.Close();
             }
-            Response.Redirect("adminPage.aspx");
+            Session["userID"] = userBox.Text;
+            Response.Redirect("default.aspx");
+        }
+
+        protected void lnkAdminLogin_Click1(object sender, EventArgs e)
+        {
+
         }
     }
 }

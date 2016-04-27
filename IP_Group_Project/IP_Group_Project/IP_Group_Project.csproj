@@ -74,6 +74,7 @@
     <Content Include="adminPage.aspx" />
     <Content Include="about.aspx" />
     <Content Include="Merchandise.aspx" />
+    <Content Include="ticketPage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.Master.cs">
@@ -90,6 +91,8 @@
     <Compile Include="main.Master.designer.cs">
       <DependentUpon>main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\Class2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -139,6 +142,13 @@
     </Compile>
     <Compile Include="Merchandise.aspx.designer.cs">
       <DependentUpon>Merchandise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ticketPage.aspx.cs">
+      <DependentUpon>ticketPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ticketPage.aspx.designer.cs">
+      <DependentUpon>ticketPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
