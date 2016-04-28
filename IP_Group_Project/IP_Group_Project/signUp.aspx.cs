@@ -113,13 +113,7 @@ namespace IP_Group_Project
             try
             {
                 cmd.ExecuteNonQuery();
-                int search = Convert.ToInt32(cmd.ExecuteScalar());
-                if (search > 0)
-                {
-                    labelError.Text = "* Sorry, this username is already in use. Please try again";
-                    labelError.Visible = true;
-                    return;
-                }
+                exit = true;
             }
             catch
             {
@@ -135,8 +129,6 @@ namespace IP_Group_Project
             {
                 Response.Redirect("default.aspx");
             }
-            Session["userID"] = userBox.Text;
-            Response.Redirect("default.aspx");
         }
     }
 }

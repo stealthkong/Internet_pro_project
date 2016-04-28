@@ -113,36 +113,7 @@
     <asp:Label ID="labelError" runat="server" ForeColor="#FF3300" Visible="False"></asp:Label>
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:missCalculationsConnectionString %>" SelectCommand="SELECT * FROM [Users]" DeleteCommand="DELETE FROM [Users] WHERE [User_ID] = @User_ID" InsertCommand="INSERT INTO [Users] ([User_Uname], [User_Password], [User_FName], [User_LName], [User_Street], [User_City], [User_Zip], [User_DOB], [User_Phone], [User_Email]) VALUES (@User_Uname, @User_Password, @User_FName, @User_LName, @User_Street, @User_City, @User_Zip, @User_DOB, @User_Phone, @User_Email)" UpdateCommand="UPDATE [Users] SET [User_Uname] = @User_Uname, [User_Password] = @User_Password, [User_FName] = @User_FName, [User_LName] = @User_LName, [User_Street] = @User_Street, [User_City] = @User_City, [User_Zip] = @User_Zip, [User_DOB] = @User_DOB, [User_Phone] = @User_Phone, [User_Email] = @User_Email WHERE [User_ID] = @User_ID">
-        <DeleteParameters>
-            <asp:Parameter Name="User_ID" Type="Int32" />
-        </DeleteParameters>
-        <InsertParameters>
-            <asp:Parameter Name="User_Uname" Type="String" />
-            <asp:Parameter Name="User_Password" Type="String" />
-            <asp:Parameter Name="User_FName" Type="String" />
-            <asp:Parameter Name="User_LName" Type="String" />
-            <asp:Parameter Name="User_Street" Type="String" />
-            <asp:Parameter Name="User_City" Type="String" />
-            <asp:Parameter Name="User_Zip" Type="Int32" />
-            <asp:Parameter DbType="Date" Name="User_DOB" />
-            <asp:Parameter Name="User_Phone" Type="String" />
-            <asp:Parameter Name="User_Email" Type="String" />
-        </InsertParameters>
-        <UpdateParameters>
-            <asp:Parameter Name="User_Uname" Type="String" />
-            <asp:Parameter Name="User_Password" Type="String" />
-            <asp:Parameter Name="User_FName" Type="String" />
-            <asp:Parameter Name="User_LName" Type="String" />
-            <asp:Parameter Name="User_Street" Type="String" />
-            <asp:Parameter Name="User_City" Type="String" />
-            <asp:Parameter Name="User_Zip" Type="Int32" />
-            <asp:Parameter DbType="Date" Name="User_DOB" />
-            <asp:Parameter Name="User_Phone" Type="String" />
-            <asp:Parameter Name="User_Email" Type="String" />
-            <asp:Parameter Name="User_ID" Type="Int32" />
-        </UpdateParameters>
-    </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:missCalculationsConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
 </asp:Content>
