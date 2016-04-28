@@ -18,8 +18,15 @@
         	<!-- Banner -->
 			<section id="banner">
 				<h2>
-                    <a href="default.aspx"><img src="images/MC%20logo-white.gif" style="height: 196px; width: 608px" /></a></h2>
-                <ul class="actions">
+                     <a href="default.aspx" style="font-family: helvetica; font-size: 20px"><img src="images/MC%20logo-white.gif" style="height: 196px; width: 608px" />Hey
+                     <asp:Label ID="userLog" runat="server" Font-Names="helvetica" Font-Size="15pt" ForeColor="White"></asp:Label>
+                     </a></h2>
+                 <p style="font-family: helvetica; font-size: 15px">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <asp:LinkButton ID="lnkLogOut" OnClick="lnkLogOut_Click" runat="server" Font-Bold="False" Font-Names="helvetica" Font-Size="12pt" Visible="False"></asp:LinkButton>
+                 </p>
+                  <ul class="actions">
+                     <li><a href="default.aspx" class="button special"> HOME  </a></li>
 					<li><a href="calendar.aspx" class="button special"> SHOW CALENDAR  </a></li>
                     <li><a href="About.aspx" class="button special"> ABOUT MISS CALCULATION'S </a></li>
                     <li><a href="Merchandise.aspx" class="button special"> MERCHANDISE  </a></li>
