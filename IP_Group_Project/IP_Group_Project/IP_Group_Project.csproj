@@ -63,6 +63,7 @@
     <Content Include="images\background.gif" />
     <Content Include="images\background2.jpg" />
     <Content Include="images\backgroundThree.jpg" />
+    <Content Include="images\Brass_knuck.gif" />
     <Content Include="images\loginImage.gif" />
     <Content Include="images\MC logo- black.gif" />
     <Content Include="images\MC logo-white.gif" />
@@ -74,7 +75,6 @@
     <Content Include="adminPage.aspx" />
     <Content Include="about.aspx" />
     <Content Include="Merchandise.aspx" />
-    <Content Include="ticketsPage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="login.Master.cs">
@@ -140,13 +140,6 @@
     </Compile>
     <Compile Include="Merchandise.aspx.designer.cs">
       <DependentUpon>Merchandise.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ticketsPage.aspx.cs">
-      <DependentUpon>ticketsPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ticketsPage.aspx.designer.cs">
-      <DependentUpon>ticketsPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

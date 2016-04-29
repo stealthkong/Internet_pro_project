@@ -30,7 +30,7 @@
         Miss Calculation's is that end.
         </p>
         <header class="major">
-						<h2 style="margin-left: 560px">Miss Calculations&nbsp;&nbsp;&nbsp; </h2>
+						<h2 style="margin-left: 50px">Miss Calculations&nbsp;&nbsp;&nbsp; </h2>
 					</header>
              <div class="features">
 						<div class="feature">
