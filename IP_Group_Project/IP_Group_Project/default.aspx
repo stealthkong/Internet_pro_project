@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <div id="fb-root"></div>
     <div id="fb-root">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:missCalculationsConnectionString %>" SelectCommand="SELECT [Ticket_Name], [Ticket_Description], [Ticket_Date], [Ticket_Price], [Ticket_Image] FROM [Ticket]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:missCalculationsConnectionString %>" SelectCommand="SELECT [Ticket_Name], [Ticket_Description], [Ticket_Date], [Ticket_Image] FROM [Ticket]"></asp:SqlDataSource>
     </div>
 
 <script>(function(d, s, id) {
@@ -27,22 +27,40 @@
     <div style="width: 20%; height: 100%; background-color: black; float:left;"><div class="fb-comments" data-href="https://www.facebook.com/MissCalculations/" data-width="300" data-numposts="5"></div></div>
     <div style="width: 60%; height: 100%; background-color: green; float:left;">-<asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
         <AlternatingItemTemplate>
-            <td runat="server" style="background-color: #FFFFFF;color: #284775;">Ticket_Name:
+            <td runat="server" style="background-color: #FFFFFF;color: #284775;">
                 <asp:Label ID="Ticket_NameLabel" runat="server" Text='<%# Eval("Ticket_Name") %>' />
                 <br />
+                
+                
                 
                 <asp:Label ID="Ticket_DescriptionLabel" runat="server" Text='<%# Eval("Ticket_Description") %>' />
                 <br />
                 
+                
+                
                 <asp:Label ID="Ticket_DateLabel" runat="server" Text='<%# Eval("Ticket_Date") %>' />
                 <br />
                 
-                <asp:Label ID="Ticket_PriceLabel" runat="server" Text='<%# Eval("Ticket_Price") %>' />
-                <br />
                 
+               
                 <asp:Label ID="Ticket_ImageLabel" runat="server" Text='<%# Eval("Ticket_Image") %>' />
                 <br />
-                <asp:Button ID="Button1" OnClick="purchaseButton_Click" runat="server" Text="Purchase Ticket" />
+
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4YCRMU3J3UEP6">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ticket Types">Ticket Types</td></tr><tr><td><select name="os0">
+	<option value="Pit">Pit $30.00 USD</option>
+	<option value="Balcony">Balcony $20.00 USD</option>
+	<option value="VIP">VIP $50.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+                
             </td>
         </AlternatingItemTemplate>
         <EditItemTemplate>
@@ -54,9 +72,6 @@
                 <br />
                 Ticket_Date:
                 <asp:TextBox ID="Ticket_DateTextBox" runat="server" Text='<%# Bind("Ticket_Date") %>' />
-                <br />
-                Ticket_Price:
-                <asp:TextBox ID="Ticket_PriceTextBox" runat="server" Text='<%# Bind("Ticket_Price") %>' />
                 <br />
                 Ticket_Image:
                 <asp:TextBox ID="Ticket_ImageTextBox" runat="server" Text='<%# Bind("Ticket_Image") %>' />
@@ -92,9 +107,6 @@
                 Ticket_Date:
                 <asp:TextBox ID="Ticket_DateTextBox" runat="server" Text='<%# Bind("Ticket_Date") %>' />
                 <br />
-                Ticket_Price:
-                <asp:TextBox ID="Ticket_PriceTextBox" runat="server" Text='<%# Bind("Ticket_Price") %>' />
-                <br />
                 Ticket_Image:
                 <asp:TextBox ID="Ticket_ImageTextBox" runat="server" Text='<%# Bind("Ticket_Image") %>' />
                 <br />
@@ -105,22 +117,40 @@
             </td>
         </InsertItemTemplate>
         <ItemTemplate>
-            <td runat="server" style="background-color: #E0FFFF;color: #333333;">Ticket_Name:
+            <td runat="server" style="background-color: #E0FFFF;color: #333333;">
                 <asp:Label ID="Ticket_NameLabel" runat="server" Text='<%# Eval("Ticket_Name") %>' />
                 <br />
+                
+                
                 
                 <asp:Label ID="Ticket_DescriptionLabel" runat="server" Text='<%# Eval("Ticket_Description") %>' />
                 <br />
                 
+                
+                
                 <asp:Label ID="Ticket_DateLabel" runat="server" Text='<%# Eval("Ticket_Date") %>' />
                 <br />
                 
-                <asp:Label ID="Ticket_PriceLabel" runat="server" Text='<%# Eval("Ticket_Price") %>' />
-                <br />
+                
                 
                 <asp:Label ID="Ticket_ImageLabel" runat="server" Text='<%# Eval("Ticket_Image") %>' />
                 <br />
-                <asp:Button ID="Button2" OnClick="purchaseButton_Click" runat="server" Text="Purchase Ticket" />
+                
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4YCRMU3J3UEP6">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ticket Types">Ticket Types</td></tr><tr><td><select name="os0">
+	<option value="Pit">Pit $30.00 USD</option>
+	<option value="Balcony">Balcony $20.00 USD</option>
+	<option value="VIP">VIP $50.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
             </td>
         </ItemTemplate>
         <LayoutTemplate>
@@ -148,9 +178,6 @@
                 <br />
                 Ticket_Date:
                 <asp:Label ID="Ticket_DateLabel" runat="server" Text='<%# Eval("Ticket_Date") %>' />
-                <br />
-                Ticket_Price:
-                <asp:Label ID="Ticket_PriceLabel" runat="server" Text='<%# Eval("Ticket_Price") %>' />
                 <br />
                 Ticket_Image:
                 <asp:Label ID="Ticket_ImageLabel" runat="server" Text='<%# Eval("Ticket_Image") %>' />
