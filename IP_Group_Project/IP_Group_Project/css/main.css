@@ -133,16 +133,11 @@ a{
 			color: #00cdcf;
 		}
 
+
 #fullcontent {
     position:fixed;
     width: 100% !important;
     height: 1000px !important;
     background-color: black;
-
-}
-
-#FrontPageList {
-    font-family: Helvetica;
-    font-size: 20px;
 
 }

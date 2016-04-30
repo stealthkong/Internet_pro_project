@@ -22,12 +22,14 @@
 
 
     <section id="mainBody">
-        <p>
+        <p style="font-family: Helveltica; font-size: 20px">
         Since the inventon of the calculator in 1642, man has been able to make incredible calculations that
         have changed the way we look at life, time, and the universe. And Since that year, man has been looking
         for loud music and stronger booze to end these miserably correct calculations that plague him. 
-        
+        </p>
+        <p style="font-family: Helvetica; font-size: 20px">
         Miss Calculation's is that end.
+        </P>
         </p>
         <header class="major">
 						<h2 style="margin-left: 50px">Miss Calculations&nbsp;&nbsp;&nbsp; </h2>

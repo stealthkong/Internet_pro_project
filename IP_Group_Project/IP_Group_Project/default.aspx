@@ -25,7 +25,7 @@
      <div id="FrontPageList">
     <div id="fullcontent">
     <div style="width: 20%; height: 100%; background-color: black; float:left;"><div class="fb-comments" data-href="https://www.facebook.com/MissCalculations/" data-width="300" data-numposts="5"></div></div>
-    <div style="width: 60%; height: 100%; background-color: green; float:left;">-<asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" style="margin-right: 50px">
+    <div style="width: 60%; height: 100%; background-color: green; float:left;">-&nbsp;&nbsp; <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" style="margin-right: 50px">
         <AlternatingItemTemplate>
             <td runat="server" style="background-color: #FFFFFF;color: #284775;">
                 <asp:Label ID="Ticket_NameLabel" runat="server" Text='<%# Eval("Ticket_Name") %>' />

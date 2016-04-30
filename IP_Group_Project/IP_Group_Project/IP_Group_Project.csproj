@@ -67,6 +67,8 @@
     <Content Include="images\loginImage.gif" />
     <Content Include="images\MC logo- black.gif" />
     <Content Include="images\MC logo-white.gif" />
+    <Content Include="images\shirt.gif" />
+    <Content Include="images\switch.gif" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
     <Content Include="login.aspx" />
