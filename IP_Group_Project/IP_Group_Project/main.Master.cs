@@ -11,6 +11,7 @@ namespace IP_Group_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lnkLogOut.Visible = false;
              if(Session["userID"] == null)
              {
                  userLog.Text = "fella, Log In!";

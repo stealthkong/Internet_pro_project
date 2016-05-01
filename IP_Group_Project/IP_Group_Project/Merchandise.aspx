@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="Merchandise.aspx.cs" Inherits="IP_Group_Project.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 148px;
+            height: 117px;
+        }
+        .auto-style2 {
+            width: 224px;
+            height: 146px;
+        }
+        .auto-style3 {
+            width: 177px;
+            height: 107px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -32,9 +46,13 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label1" runat="server" Font-Names="Public Market" Font-Size="12pt" Text="MERCHANDISE FOR SALE"></asp:Label>
     </p>
-    <p>
-							 <p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
-                                 &nbsp;T-SHIRT<img src="images/shirt.gif" style="height: 169px; width: 219px" /></p>
+
+    <section id="shop">
+    <ul>
+                     <li><p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
+                                 <img class="auto-style2" src="images/shirt.gif" /></p>
+                         <p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
+                                 T-SHIRT&nbsp;&nbsp; </p>
     <p style="margin-left: 40px; font-family: Helvetica; font-size: 15px; font-weight: bold;">
         So, you know, you can prove to people that you're cool
     </p>
@@ -82,12 +100,12 @@
 </form>
 
 
-</p>
-        &nbsp;</p>
-   
-						<div class="feature">
+</p></li>
+                    <li><div class="feature">
 							 <p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
-                                 &nbsp;BRASS KNUCKLES<img src="images/Brass_knuck.gif" style="height: 169px; width: 219px" /></p>
+                                 <img class="auto-style1" src="images/Brass_knuck.gif" /></p>
+                             <p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
+                                 &nbsp;BRASS KNUCKLES</p>
     <p style="margin-left: 40px; font-family: Helvetica; font-size: 15px; font-weight: bold;">
         Man, but them knuckles hurt!
     </p>
@@ -105,11 +123,12 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-</p>
-			</div>
-        <div class="feature">
+                             </li>
+                    <li> <div class="feature">
 							 <p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
-                                 &nbsp;GREASER SWITCHBLADE COMB<img src="images/switch.gif" style="height: 169px; width: 219px" /></p>
+                                 <img class="auto-style3" src="images/switch.gif" /></p>
+                             <p style="font-family: 'Public Market'; font-size: 10px; font-weight: bold; margin-left: 80px;">
+                                 &nbsp;GREASER SWITCHBLADE COMB</p>
     <p style="margin-left: 40px; font-family: Helvetica; font-size: 15px; font-weight: bold;">
         Be fly 'til you die
     </p>
@@ -130,10 +149,12 @@
 
 
 </p>
-			</div>
-        
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
+			</div></li>
+        </ul>
+        </section>
+    <p>
+
+    </p>
    
 </asp:Content>
 

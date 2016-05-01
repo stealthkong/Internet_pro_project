@@ -49,5 +49,11 @@ namespace IP_Group_Project
 
             SqlDataSource1.Insert();
         }
+
+        protected void exitButton_Click(object sender, EventArgs e)
+        {
+            Session["userID"] = null;
+            Response.Redirect("default.aspx");
+        }
     }
 }

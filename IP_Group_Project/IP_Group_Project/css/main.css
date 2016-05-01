@@ -35,7 +35,7 @@ ul.actions li a{
 }
 
 ul.actions li a:hover {
-    color: blue;
+    color: gray;
 }
 
 a{
@@ -61,7 +61,7 @@ a{
 }
 
 #mainBody {
-    background-color: #ffffff;
+    background-color: gray;
     color: #000000;
     font-family: Helvetica;
 }
@@ -140,4 +140,15 @@ a{
     height: 1000px !important;
     background-color: black;
 
+}
+
+#frontList {
+    position: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+#shop {
+    margin-left: 500px;
 }
