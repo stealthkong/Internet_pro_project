@@ -34,7 +34,7 @@ namespace IP_Group_Project
 
             if (passBox.Text == "")
             {
-                Label3.Text = "* The email field is required";
+                Label3.Text = "* The password field is required";
                 Label3.Visible = true;
                 return;
             }
